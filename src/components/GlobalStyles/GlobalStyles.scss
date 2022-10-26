@@ -1,0 +1,105 @@
+@import 'normalize.css';
+//Font embeded
+@font-face {
+    font-family: ProductSans;
+    src: url('/assets/fonts/Product-Sans-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url('/assets/fonts/Product-Sans-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: ProductSansItalic;
+    src: url('/assets/fonts/Product-Sans-Italic.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: ProductSansItalic;
+    src: url('/assets/fonts/Product-Sans-Bold-Italic.ttf');
+    font-weight: 700;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --main-black-color: #000;
+    --main-white-color: #fff;
+    --main-gray-color: #626161;
+    --sub-gray-color: #f8f8f8;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate-circle {
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+body {
+    font-family: ProductSans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+p {
+    margin: 0;
+}
+.bold {
+    font-weight: 700;
+}
+.btn {
+    padding: 15px;
+    font-size: 1.8rem;
+    display: block;
+}
+.block {
+    margin-bottom: 60px;
+}
+.title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    &::before,
+    &::after {
+        content: '';
+        margin: 0 20px 0 0;
+        border-top: 2px solid var(--main-black-color);
+        flex: 1 0 20px;
+    }
+    &::after {
+        margin: 0 0 0 20px;
+    }
+}
+.sub-title {
+    font-size: 3.6rem;
+}

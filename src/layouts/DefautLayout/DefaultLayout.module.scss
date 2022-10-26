@@ -1,0 +1,16 @@
+.wrapper {
+    position: relative;
+}
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 10;
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: var(--main-black-color);
+}
